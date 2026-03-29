@@ -31,5 +31,5 @@ jobs:
       run: |
         docker build -t devops-app .
         - name: Deploy Application
-  run: |
-    echo "Application deployed successfully"
+          run: |
+            echo "Application deployed successfully"
