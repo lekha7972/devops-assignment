@@ -24,12 +24,16 @@ docker run -p 5000:5000 devops-app
 
 ## Terraform
 This provisions:
+- VPC (Virtual Private Cloud)
+- Subnet (Network segmentation)
+- Security Group (Firewall rules for SSH and HTTP)
 - AWS EC2 instance (t2.micro)
+- S3 Bucket (Storage service)
 
-Steps:
+Commands:(for reference)
 terraform init
 terraform plan
 terraform apply
 
 ## Monitoring (Optional)
-Not implemented
+Not implemented.
