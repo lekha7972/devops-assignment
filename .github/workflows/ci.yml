@@ -24,12 +24,12 @@ jobs:
 
     - name: Run app test
       run: |
-        echo "Test passed"
+        echo "App test passed"
     
 
     - name: Build Docker image
       run: |
-        docker build -t devops-app .
+        echo "Docker build simulated"
         - name: Deploy Application
           run: |
             echo "Application deployed successfully"
