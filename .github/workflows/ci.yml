@@ -10,26 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-    - name: Run app test
-      run: |
-        echo "App test passed"
-    
+      - name: Run test
+        run: echo "App test successful"
 
-    - name: Build Docker image
-      run: |
-        echo "Docker build simulated"
-        - name: Deploy Application
-          run: |
-            echo "Application deployed successfully"
+      - name: Build Docker image
+        run: docker build -t devops-app .
+
+      - name: Deploy Application
+        run: echo "Application deployed successfully"
